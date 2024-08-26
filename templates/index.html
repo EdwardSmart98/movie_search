@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>CHI HTMX DEMO</title>
+    <script src="https://unpkg.com/htmx.org/dist/htmx.js"></script>
+</head>
+<body>
+<h1>HTMX DEMO</h1>
+<p>Welcome to the home page.</p>
+<p> A text input and button to search for movies</p>
+<form hx-get="/movie/search"
+      hx-target="#movies" >
+    <input type="text"
+           id="search"
+           name="search"
+           placeholder="Search for movies"
+    >
+    <button type="submit">Search</button>
+</form>
+<div id="movies"></div>
+
+</body>
+</html>

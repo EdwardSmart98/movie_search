@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--        Show the movie name, description, and run time in a list view -->
+<body>
+<h1>Movie List</h1>
+<ul>
+    {{range .Movies}}
+    <li>
+        <div>{{.Name}} - {{.Description}} - {{.Rating}}</div>
+    </li>
+    {{end}}
+</ul>
+</body>
+</html>
